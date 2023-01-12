@@ -1,8 +1,3 @@
-/**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
- */
 // Solution 1 - using Maps
 /**
  * @param {string} s

@@ -29,3 +29,87 @@
     dfs(root)
     return max
 };
+
+//1. dfs(root) = dfs(1) =
+(left = dfs(2)), //root.left
+	(right = dfs(3)), //root.right
+	(max = Math.max(left + right, max));
+return Math.max(left, right) + 1;
+
+//3. L dfs(4)
+(left = dfs(null)), //root.left
+	(right = dfs(null)), //root.right
+	(max = Math.max(left + right, max));
+return Math.max(left, right) + 1;
+
+//4. L dfs(null)
+return 0;
+
+//5. R dfs(null)
+return 0;
+
+//3. L dfs(4)
+(left = 0), //root.left
+	(right = 0), //root.right
+	(max = Math.max(0 + 0, max));
+return Math.max(0, 0) + 1;
+
+//2. L dfs(2)
+(left = 1), //root.left
+	(right = dfs(5)), //root.right
+	(max = Math.max(1 + right, max));
+return Math.max(1, right) + 1;
+
+//6. R dfs(5)
+(left = dfs(null)), //root.left
+	(right = dfs(null)), //root.right
+	(max = Math.max(left + right, max));
+return Math.max(left, right) + 1;
+
+//7. L dfs(null)
+return 0;
+
+//8. R dfs(null)
+return 0;
+
+//6. R dfs(5)
+(left = 0), //root.left
+	(right = 0), //root.right
+	(max = Math.max(0 + 0, max));
+return Math.max(0, 0) + 1;
+
+//2. L dfs(2)
+(left = 1), //root.left
+	(right = 1), //root.right
+	(max = Math.max(1 + 1, 0));
+return Math.max(1, 1) + 1;
+
+//1. dfs(root) = dfs(1) =
+(left = 2), //root.left
+	(right = dfs(3)), //root.right
+	(max = Math.max(2 + right, 2));
+return Math.max(2, right) + 1;
+
+//9. R dfs(2)
+(left = dfs(null)), //root.left
+	(right = dfs(null)), //root.right
+	(max = Math.max(left + right, 2));
+return Math.max(left, right) + 1;
+
+//10. L dfs(null)
+return 0;
+
+//11. R dfs(null)
+return 0;
+
+//9. R dfs(2)
+(left = 0), //root.left
+	(right = 0), //root.right
+	(max = Math.max(0 + 0, 2));
+return Math.max(0, 0) + 1;
+
+//1. dfs(root) = dfs(2) =
+(left = 2), //root.left
+	(right = 1), //root.right
+	(max = Math.max(2 + 1, 2)); //3
+return Math.max(2, 1) + 1;

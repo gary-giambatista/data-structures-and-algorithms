@@ -1,3 +1,5 @@
+//YouTube video solution: https://youtu.be/hrE1-qHQIhk
+
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {

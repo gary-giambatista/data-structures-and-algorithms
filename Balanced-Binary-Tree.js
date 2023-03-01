@@ -1,3 +1,5 @@
+//YouTube video solution: https://youtu.be/_0hqO9mOC3M
+
 /**
  * @param {TreeNode} root
  * @return {boolean}

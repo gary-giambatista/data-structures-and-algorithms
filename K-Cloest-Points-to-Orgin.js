@@ -1,3 +1,5 @@
+//YouTube Video Solution: https://youtu.be/l6Q4rvRgtU4
+
 /**
  * @param {number[][]} points
  * @param {number} k

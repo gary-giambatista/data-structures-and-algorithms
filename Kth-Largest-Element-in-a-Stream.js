@@ -1,3 +1,5 @@
+// YouTube video solution: https://youtu.be/ppbp4p-idXI
+
 class KthLargest {
 	constructor(k, nums) {
 		this.k = k;

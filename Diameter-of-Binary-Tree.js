@@ -1,3 +1,5 @@
+//YouTube video solution: https://youtu.be/6RsRTx6z3CA
+
 /**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {

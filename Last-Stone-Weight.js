@@ -1,3 +1,5 @@
+//YouTube video solution: https://youtu.be/VyTn9-B1m44
+
 /**
  * @param {number[]} stones
  * @return {number}

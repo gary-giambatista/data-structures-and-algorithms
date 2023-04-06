@@ -1,3 +1,5 @@
+// Time Complexity: O(n) - iterate entirely through the tokens array
+// Space Complexity: O(n) - create an array for at worst size of tokens array
 /**
  * @param {string[]} tokens
  * @return {number}

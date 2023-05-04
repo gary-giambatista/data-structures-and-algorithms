@@ -1,3 +1,6 @@
+//Time Complexity: O(N)
+//Space Complexity: O(N)
+
 /**
  * @param {number[]} nums
  * @param {number} k
@@ -14,7 +17,7 @@ var topKFrequent = function (nums, k) {
             map.set(nums[i], 1)
         }
     }
-    // iterate the entries map, get all the keys sorted by the highest to lowest of the values 
+    //spread the keys into an array, then sort the keys in descending order by getting their count and comparing, slice of 2 largest
     let sortArr = [...map.keys()].sort((a, b) => map.get(b) - map.get(a)).slice(0, k)
     
     return sortArr;

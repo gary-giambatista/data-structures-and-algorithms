@@ -1,6 +1,7 @@
-//Time complexity: O(N) This approach involves precomputing the Fibonacci sequence, where N is the length of the array (the number of Fibonacci numbers we want to generate). After this precomputation, each call to next() is O(1)O(1)O(1).
+//Time complexity: O(1). The time complexity of the fibGenerator function is O(1) for each next() call. This is because in each call to next(), we only perform a fixed number of operations: adding two numbers and swapping two variables. Hence, the time complexity does not grow with the number of calls to next(). 
+//However, if you were to consider the time complexity of generating N Fibonacci numbers (i.e., making N calls to next()), the overall time complexity would be O(N, since you'd be making N constant-time operations.
 
-//Space complexity: O(N) This approach requires storing N numbers in the array, resulting in a space complexity of O(N). However, unlike the recursive approach, this space is not used for call stack frames but for storing the sequence numbers.
+//Space complexity: O(1). The space complexity of the fibGenerator function is also O(1). This is because we only use a fixed amount of space to store the two most recent numbers in the Fibonacci sequence and one additional variable for the calculation, regardless of how many times we call next()
 
 /**
  * @return {Generator<number>}
